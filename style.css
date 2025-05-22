@@ -1,0 +1,18 @@
+.box{
+    width: 250px;
+    height: 400px;
+    background-color: rgb(121, 216, 239);
+    border-radius: 20px;
+    
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.Container{
+    display: flex;
+    justify-content: center;
+}
+.weather
