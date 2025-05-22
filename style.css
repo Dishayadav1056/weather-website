@@ -1,18 +1,127 @@
-.box{
-    width: 250px;
-    height: 400px;
-    background-color: rgb(121, 216, 239);
-    border-radius: 2000px;
-    
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #348F50, #56B4D3);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
-.mainContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.Container{
-    display: flex;
-    justify-content: center;
+
+.card {
+  background: linear-gradient(to bottom, #2193b0, #6dd5ed);
+  border-radius: 30px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
-.weather
+
+.current {
+  text-align: center;
+}
+
+.location {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.weather-icon {
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+.thunderstorm::before {
+  content: "⛈️";
+}
+
+.temperature {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.status {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.date {
+  font-size: 0.9em;
+  color: #eee;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+.details span {
+  display: block;
+  font-size: 0.7em;
+  color: #ddd;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 0.8em;
+  background: rgba(0,0,0,0.2);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.hour {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+}
+
+.hour.active {
+  background: rgba(255,255,255,0.2);
+  border-radius: 15px;
+}
+
+.forecast .title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.sub-info {
+  background: rgba(0,0,0,0.1);
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.temp-range {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.extra {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9em;
+}
+
+.extra span {
+  display: block;
+  font-size: 0.7em;
+  color: #ddd;
+}
+
+.week div {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  font-size: 0.9em;
+}

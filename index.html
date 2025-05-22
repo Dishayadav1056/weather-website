@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App UI</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="Container">
-        <div class="mainContainer">
-            <div class="header">
-                <div class="heading">
-                    <div> Weather App</div>
-
-                </div>
-            </div>
-            
-
-            <div class="box">                
-            </div>
-        </div>
-
+  <div class="app">
+    <!-- Current Weather Card -->
+    <div class="card current">
+      <div class="location">📍 Minsk</div>
+      <div class="weather-icon thunderstorm"></div>
+      <div class="temperature">21°</div>
+      <div class="status">Thunderstorm</div>
+      <div class="date">Monday, 17 May</div>
+      <div class="details">
+        <div>13 km/h<br><span>Wind</span></div>
+        <div>24%<br><span>Humidity</span></div>
+        <div>87%<br><span>Chance of Rain</span></div>
+      </div>
+      <div class="timeline">
+        <div class="hour">10:00<br>🌧️ 23°</div>
+        <div class="hour active">11:00<br>⛈️ 21°</div>
+        <div class="hour">12:00<br>🌥️ 22°</div>
+        <div class="hour">13:00<br>❄️ 19°</div>
+      </div>
     </div>
-    
+
+    <!-- 7-Day Forecast Card -->
+    <div class="card forecast">
+      <div class="title">📅 Tomorrow</div>
+      <div class="sub-info">
+        <div class="mini-icon">🌦️</div>
+        <div class="temp-range">20° / 17°</div>
+        <div class="extra">
+          <div>9 km/h<br><span>Wind</span></div>
+          <div>31%<br><span>Humidity</span></div>
+          <div>93%<br><span>Rain</span></div>
+        </div>
+      </div>
+      <div class="week">
+        <div>Mon 🌧️ +20°/+14°</div>
+        <div>Tue 🌧️ +22°/+16°</div>
+        <div>Wed ⛈️ +19°/+13°</div>
+        <div>Thu 🌨️ +18°/+12°</div>
+        <div>Fri ⚡ +23°/+19°</div>
+        <div>Sat 🌧️ +25°/+17°</div>
+        <div>Sun 🌩️ +21°/+18°</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
